@@ -1,0 +1,123 @@
+@import '../../../scss/variables';
+
+
+.project {
+   // background: burlywood;
+    display: flex;
+   // flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 15%;
+    text-align: left;
+}
+
+.project-info {
+   // height: 420px;
+    width: 410px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  //  margin: 0 3%;
+  //  background: blueviolet;
+}
+
+.project-name {
+    margin: 0 auto 5px;
+    font: 35px "Raleway semiBold", sans-serif;
+
+    a {
+        color: $main-color;
+        transition: all .2s ease-in;
+        text-shadow: 1px 1px 1px $main-color;
+
+        &:hover {
+            color: lighten($main-color, 15%);
+            text-shadow: 1px 1px 2px lighten($main-color, 15%);
+            
+        }
+    }
+}
+
+a.see-code {
+    font-size: 18px;
+    text-decoration: underline;
+    transition: all .2s ease-in;
+    
+    &:hover {
+        color: $main-color;
+       // text-shadow: 1px 1px 2px $text-color;
+        
+    }
+}
+
+.about-project {
+    font-size: 16px;
+    text-align: left;
+}
+
+.project-tags {
+    margin: 0;
+    text-align: left;
+
+    li {
+
+        font: 17px "Sourcesanspro";
+        line-height: 20px;
+        list-style: circle;
+        display: inline-block;
+        color: $background-color;
+        background-color: #6794b7;
+       // background: linear-gradient(to left, #6794b7 0%, darken(#6794b7, 10%) 100%);
+        height: 20px;
+      //  box-shadow: 1px 1px 0 lighten($text-color, 50%);
+        padding: 5px 15px 5px 10px;
+        margin: 5px 20px 0 0;
+        position: relative;
+        background-image: url('./images/ellipse.png');
+        background-repeat: no-repeat;
+        background-position: right;
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        right: -15px;
+        border-width: 15px 0 15px 15px;
+        border-style: solid;
+        border-color: transparent #6794b7;
+        transition: all .2s ease-in;
+      }
+    }
+}
+
+
+.slider  {
+  //  margin: 0 3%;
+    height: 420px;
+    width: 600px;
+    border: 1px solid lighten($link-color, 30%);
+    filter: drop-shadow(0 2px 20px $link-color);
+    user-select: none;
+
+        img {
+            width: 100%;
+            height: 418px;
+            display: block;
+            object-fit: cover;
+            user-select: none;
+            
+        }
+}
+
+.slick-dots {
+   // height: 5px;
+}
+
+button.slick-prev:before, button.slick-next:before {
+    color: lighten($link-color, 10%);
+   /// color: $link-color;
+}

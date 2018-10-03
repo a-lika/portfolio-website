@@ -1,0 +1,47 @@
+@import '../../../scss/variables';
+
+.header-name {
+    text-transform: uppercase;
+}
+
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    p {
+        margin-top: 0;
+    }
+
+    img[alt="photo"] {
+        max-width: 400px;
+        width: 40%;
+        //width: 40%;
+        border-radius: 10px;
+        margin: 0 5% 0 0;
+    }
+}
+
+@-moz-document url-prefix() {
+    img[alt="photo"] {
+        min-width: 35%;
+        max-width: 400px;
+    }
+}
+.short-info-about-me {
+    margin: 0 5% 5% 0;
+    text-align: left;
+
+    &>div  { 
+        line-height: 22px;
+        color: $main-color;
+        font-weight: 700;
+        padding: 0 0 15px 0;
+
+        img {
+        width: 20px;
+        height: 22px;        
+        padding: 0 15px 0 0;
+        }
+    }
+}

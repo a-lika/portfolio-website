@@ -1,0 +1,66 @@
+@import '../../../scss/variables';
+
+.education {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.education img  {
+    position: absolute;
+    top: calc(50% - 213px);
+    left: calc(50% - 160px);
+    opacity: .15;
+    filter: drop-shadow(16px 16px 20px blue);
+    user-select: none;
+}
+
+.education-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.education-info {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3%;
+    margin: 2% auto;
+}
+
+.leftside {
+    text-align: right;
+}
+
+.rightside {
+   text-align: left;
+}
+
+.study-period {
+    width: 200px;
+    font-size: 25px;
+    font-weight: 900;
+    color: $main-color;
+    line-height: 30px;
+    text-align: center;
+}
+
+.place-of-study {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+
+    .faculty, .specialization {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    .specialization {
+        font-weight: 500;
+    }
+}

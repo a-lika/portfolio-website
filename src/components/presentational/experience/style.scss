@@ -1,0 +1,68 @@
+@import '../../../scss/variables';
+
+.experience {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.experience-info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 40px 1fr;
+    text-align: center;
+
+    hr {
+        height: 6px;
+        background: linear-gradient(to bottom, $main-color 0, lighten($main-color, 50%) 100%);
+        filter: drop-shadow(0 1px 15px $second-color);
+    }
+ 
+}
+
+.job {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-period{
+    padding: 0 10%;
+    font-size: 19px;
+}
+
+.job-place {
+    color: $main-color;
+}
+
+.job-point {
+    position: relative;
+}
+
+.stain {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $main-color;
+    border: 1px solid darken($main-color, 20%);
+    position: absolute;
+    top: 3px;
+    left: 98%;
+    z-index: 1;
+    filter: drop-shadow(0 1px 20px $second-color);
+}
+
+.profession {
+    font-size: 23px;
+    font-weight: 900;
+    color: $main-color;
+}
