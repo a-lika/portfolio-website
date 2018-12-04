@@ -14,23 +14,6 @@ const mapStateToProps = (state) => {
 };
 
 class ProjectsContainer extends Component {
-    /*constructor(props) {
-        super(props)
-    }*/
-    /*
-    handleChangefirstName = (event) => {
-         this.setState({firstName: event.target.value});
-    }
-    
-    handleChangelastName = (event) => {
-         this.setState({lastName: event.target.value});
-    }
-    */
-  /*  handleChangeLanguage = (event) => {
-         this.props.dispatch(changeLanguage(event.target.id));
-         console.log(this.props);
-    }*/
-    
     render() {
         let language =  (this.props.language === "english") ? ContentEng : ContentRus;
         
@@ -38,7 +21,7 @@ class ProjectsContainer extends Component {
             <Projects content = {language} />
         )
     }
-}
+};
 
 export default connect(
     mapStateToProps
